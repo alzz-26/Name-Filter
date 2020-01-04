@@ -1,0 +1,5 @@
+name: Name Replacer
+description: It is a filter which replaces your First Name with Last Name.
+core: 8.x
+type: module
+package: custom
