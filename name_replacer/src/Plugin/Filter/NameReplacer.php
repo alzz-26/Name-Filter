@@ -25,7 +25,7 @@ class NameReplacer extends FilterBase {
   
   public function process($text, $langcode) {
 
-  	$pattern = "/\[name:(.*\w+):(.*\w+)\]/i";
+  	$pattern = "/\[name:(\w+):(\w+)\]/i";
   	$replacement = "Name: $2 $1";
   	$result = preg_replace($pattern, $replacement, $text);
   	return new FilterProcessResult($result);
